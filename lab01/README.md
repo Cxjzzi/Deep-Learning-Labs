@@ -12,8 +12,11 @@ In this lab, I set up a complete deep learning workspace in Google Colab, connec
 - GitHub
 - Hugging Face
 
+## Colab Link
+https://colab.research.google.com/drive/1b3gxNPeWqVYpLqJeuqUuNuQNXXkkyl7O
+
 ## Model Used
-`<replace with the exact model you tested>`
+`distilbert-base-uncased-finetuned-sst-2-english`
 
 ## Main Result
 The model ran successfully in Colab and produced outputs as expected, confirming that the environment setup, dependencies, and inference pipeline were working correctly.
