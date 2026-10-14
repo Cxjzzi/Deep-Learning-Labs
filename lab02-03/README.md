@@ -36,6 +36,14 @@ I used mean absolute error (MAE), root mean squared error (RMSE), and the coeffi
 
 Linear regression performed much better on the final test set. The neural network's recorded test errors were extremely high, and its negative \(R^2\) indicates that it performed worse than predicting the test-set mean.
 
+## Figures
+
+The `figures/` folder contains the plots generated in the notebook:
+
+- **Input relationships:** [Temperature](figures/01_temperature_vs_power.png), [exhaust vacuum](figures/02_exhaust_vacuum_vs_power.png), [ambient pressure](figures/03_ambient_pressure_vs_power.png), and [relative humidity](figures/04_relative_humidity_vs_power.png) compared with power output.
+- **Linear regression:** [Actual vs. predicted](figures/05_baseline_actual_vs_predicted.png), [residual distribution](figures/06_baseline_residual_distribution.png), and [prediction sample](figures/16_linear_regression_prediction_sample.png).
+- **Neural network:** [Training and validation curves](figures/07_neural_network_training_validation_loss.png), [4 hidden neurons](figures/08_hidden_neurons_4_training_validation_loss.png), [64 hidden neurons](figures/09_hidden_neurons_64_training_validation_loss.png), [256 hidden neurons](figures/10_hidden_neurons_256_training_validation_loss.png), [learning rate 0.1](figures/11_learning_rate_0.1_training_validation_loss.png), [learning rate 0.01](figures/12_learning_rate_0.01_training_validation_loss.png), [learning rate 0.001](figures/13_learning_rate_0.001_training_validation_loss.png), [512-neuron selection run](figures/14_512_neuron_selection_training_validation_loss.png), and [final evaluation run](figures/15_final_evaluation_training_validation_loss.png).
+
 ## Engineering Conclusion
 
 Based on these results, I would not use the neural network in practice in its current form. Linear regression was far more accurate on this test set, but I would still check the neural network's training and scaling before drawing a final conclusion about the model. Before using either model at a power plant, I would also validate it on additional operating data and account for conditions that are not included in these four inputs.
